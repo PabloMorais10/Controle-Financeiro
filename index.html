@@ -2,32 +2,42 @@
 <html lang="pt-br">
   <head>
     <!-- PAGE INFO-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Pablo Morais" /> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pablo Morais" />
     <title>Controle financeiro</title>
 
+    <!--STYLES-->
+    <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body> 
+  <body>
     <!-- Cabeçalho-->
     <header>
-      <h1>Controle Financeiro</h1>
+      <div id="header">
+        <img class="logo" src="imagens/Logo.png" alt="logo" />
+        <h1 class="titulo">Controle Financeiro</h1>
+      </div>
     </header>
 
     <!--Transaction form-->
+    <div id="transacao">
+      <p>Tipo de transação</p>
+      <p>Nome da mercadoria</p>
+      <input type="text">
+      <p>Valor</p>
+      <input type="number" /> <br />
 
-    <p>Tipo de transação</p>
-    <p>Nome da mercadoria</p>
-    <p>Valor</p>
-    <p>Adicionar transação</p>
+      <button>Adicionar transação</button>
+    </div>
 
     <!--Account statement-->
-    <p>Extrato de transações</p>
-    <p>mercadoria</p>
-    <p>Valor</p>
-    <p>Total</p>
-    
+    <div id="account">
+      <p>Extrato de transações</p>
+      <p>mercadoria</p>
+      <p>Valor</p>
+      <p>Total</p>
+    </div>
   </body>
-  </html>
+</html>
