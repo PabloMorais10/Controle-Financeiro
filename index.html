@@ -23,13 +23,27 @@
 
     <!--Transaction form-->
     <div id="transacao">
-      <p>Tipo de transação</p>
-      <p>Nome da mercadoria</p>
-      <input type="text">
-      <p>Valor</p>
-      <input type="number" /> <br />
+      <label for="tipo-de-transacao">Tipo de transação</label>
+      <select id="tipo-de-transacao">
+        <option value="a">Compra</option>
+        <option value="b">Venda</option>
+      </select>
 
-      <button>Adicionar transação</button>
+      <table>
+        <tr>
+          <th>Nome da mercadoria</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <label for="mercadoria"></label>
+          <td><input id="mercadoria" type="text" /></td>
+          <label for="valor"></label>
+          <td><input id="valor" type="number" /></td>
+        </tr>
+      </table>
+
+      <label for="botao-transacao"></label>
+      <button id="botao-transacao">Adicionar transação</button>
     </div>
 
     <!--Account statement-->
