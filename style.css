@@ -1,15 +1,18 @@
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
-#teste {
+#cabecalho {
   position: absolute;
   width: 411px;
   height: 60px;
   left: 0px;
   top: 24px;
   background: #E0E0E0;
+  display: flex;
 }
 
 
@@ -49,6 +52,7 @@
   height: 27.63px;
   left: 370px;
   top: -180px;
+  font-family: 'latoregular'
 
 }
 
@@ -58,6 +62,7 @@
   height: 290px;
   left: 50px;
   top: 110px;
+  font-family: 'latoregular';
 
 }
 
@@ -67,6 +72,7 @@
   right: 0%;
   top: 0%;
   bottom: 80.34%;
+  font-family: 'latoregular'
 
 }
 
@@ -77,7 +83,7 @@
   height: 281px;
   left: 20px;
   top: 420px;
-
+  font-family: 'latoregular';
   background: #FFFFFF;
 
 }
@@ -99,6 +105,13 @@
   position: absolute;
 }
 
+#botao-transacao {
+  font-family: 'latoregular'
+}
+
+#tipo-de-transacao {
+  font-family: 'latoregular'
+}
 nav {
   width: 100%;
   /* 250px */
@@ -119,7 +132,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'latoregular';
   letter-spacing: .1em;
 
 }
