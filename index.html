@@ -15,43 +15,47 @@
   <body>
     <!-- Cabeçalho-->
     <header>
-      <div id="header">
+      <nav class="container">
         <img class="logo" src="imagens/Logo.png" alt="logo" />
         <h1 class="titulo">Controle Financeiro</h1>
-      </div>
+        <!-- menu -->
+        <div id="header">
+          <ul>
+            <li><a class="menu" href=""></a>Cadastro de transações</li>
+            <li><a class="menu" href=""></a>Limpar dados</li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <!--Transaction form-->
-    <div id="transacao">
-      <label for="tipo-de-transacao">Tipo de transação</label>
-      <select id="tipo-de-transacao">
-        <option value="a">Compra</option>
-        <option value="b">Venda</option>
-      </select>
+    <section class="section" id="transaction">
+      <div id="transacao">
+        <label for="tipo-de-transacao">Tipo de transação</label> <br />
+        <select id="tipo-de-transacao">
+          <option value="a">Compra</option>
+          <option value="b">Venda</option>
+        </select>
+        <form action="">
+          <label for="nmercadoria">Nome da Mercadoria</label> <br />
+          <input id="nmercadoria" type="text" /> <br />
+          <label for="valor">Valor</label> <br />
+          <input id="valor" type="number" /> <br />
+        </form>
 
-      <table>
-        <tr>
-          <th>Nome da mercadoria</th>
-          <th>Valor</th>
-        </tr>
-        <tr>
-          <label for="mercadoria"></label>
-          <td><input id="mercadoria" type="text" /></td>
-          <label for="valor"></label>
-          <td><input id="valor" type="number" /></td>
-        </tr>
-      </table>
-
-      <label for="botao-transacao"></label>
-      <button id="botao-transacao">Adicionar transação</button>
-    </div>
+        <label for="botao-transacao"></label>
+        <button id="botao-transacao">Adicionar transação</button>
+      </div>
+    </section>
 
     <!--Account statement-->
-    <div id="account">
-      <p>Extrato de transações</p>
-      <p>mercadoria</p>
-      <p>Valor</p>
-      <p>Total</p>
-    </div>
+    <section class="section" id="account">
+      <div id="account">
+        <p>Extrato de transações</p>
+        <p>mercadoria</p>
+        <p>Valor</p>
+        <p>Total</p>
+      </div>
+    </section>
   </body>
 </html>
