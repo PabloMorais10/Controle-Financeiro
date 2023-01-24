@@ -1,9 +1,46 @@
-
-
 * {
   margin: 0;
   padding: 0;
+
+
 }
+
+.sidebar {
+  position: absolute;
+  width: 411px;
+  height: 24px;
+  left: 0px;
+  top: auto;
+  background: black;
+  display: flex;
+  gap: 17px;
+}
+
+#rede {
+  width: 120px;
+  height: 16px;
+  position: absolute;
+  left: 2.64px;
+  top: 4px;
+}
+
+#hora {
+  position: absolute;
+  width: 50px;
+  height: 15px;
+  left: calc(50% - 50px/2 + 1px);
+  top: 4.5px;
+
+}
+
+#bateria {
+  position: absolute;
+  width: 88px;
+  height: 18px;
+  right: 2.36px;
+  top: 2px;
+}
+
 
 #cabecalho {
   position: absolute;
@@ -13,6 +50,9 @@
   top: 24px;
   background: #E0E0E0;
   display: flex;
+  margin-top: 17px;
+
+
 }
 
 
@@ -60,10 +100,24 @@
   position: absolute;
   width: 371px;
   height: 290px;
-  left: 50px;
+  left: 20px;
+  right: 20px;
   top: 110px;
   font-family: 'latoregular';
+  margin-top: 17px;
 
+}
+
+#nmercadoria {
+  box-sizing: border-box;
+  position: absolute;
+  height: 32px;
+  width: 371px;
+  left: 0%;
+  right: 0%;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 4px;
 }
 
 #transacao {
@@ -112,6 +166,7 @@
 #tipo-de-transacao {
   font-family: 'latoregular'
 }
+
 nav {
   width: 100%;
   /* 250px */
