@@ -108,6 +108,46 @@
 
 }
 
+#tipo{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 80.34%;
+
+}
+
+#mercadoria {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 130%;
+  bottom: 53.91%;
+  padding-bottom: 20px;
+}
+
+#value {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 153.67px;
+  bottom: 28.05%;
+  padding-bottom: 20px;
+}
+
+#tipo-de-transacao {
+  box-sizing: border-box;
+  position: absolute;
+  height: 32px;
+  width: 371px;
+  left: 0%;
+  right: 0%;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 4px;
+
+}
+
 #nmercadoria {
   box-sizing: border-box;
   position: absolute;
@@ -126,7 +166,8 @@
   right: 0%;
   top: 0%;
   bottom: 80.34%;
-  font-family: 'latoregular'
+  font-family: 'latoregular';
+  padding-bottom: 20px;
 
 }
 
@@ -139,6 +180,21 @@
   top: 420px;
   font-family: 'latoregular';
   background: #FFFFFF;
+
+}
+
+#valor {
+  box-sizing: border-box;
+  position: absolute;
+  height: 32px;
+  width: 371px;
+  left: 0%;
+  right: 0%;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  padding-bottom: 20px;
+
 
 }
 
@@ -160,11 +216,17 @@
 }
 
 #botao-transacao {
-  font-family: 'latoregular'
+  position: absolute;
+  font-family: 'latoregular';
+  width: 371px;
+  height: 33px;
+  top: 228.67px;
+
+
 }
 
 #tipo-de-transacao {
-  font-family: 'latoregular'
+  font-family: 'latoregular';
 }
 
 nav {

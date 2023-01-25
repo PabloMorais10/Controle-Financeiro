@@ -10,19 +10,18 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/fonts/lato/stylesheet.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <link rel="stylesheet" href="assets/fonts/lato/stylesheet.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
 
   <body>
     <!--SIDEBAR IPHONE0-->
     <div class="sidebar">
-      <img id="hora" src="assets/imagens/9_42 AM.svg" alt="9:42">
-      <img id="rede" src="assets/imagens/Frame 6.svg" alt="frame 6">
-      <img id="bateria" src="assets/imagens/Frame 8.svg" alt="frame 8">
+      <img id="hora" src="assets/imagens/9_42 AM.svg" alt="9:42" />
+      <img id="rede" src="assets/imagens/Frame 6.svg" alt="frame 6" />
+      <img id="bateria" src="assets/imagens/Frame 8.svg" alt="frame 8" />
     </div>
-     <!-- Cabeçalho-->
+    <!-- Cabeçalho-->
     <header id="cabecalho">
       <nav class="container">
         <img id="logo" src="assets/imagens/Logo.png" alt="logo" />
@@ -44,16 +43,22 @@
     <!--Transaction form-->
     <section class="section" id="transaction">
       <div id="transacao">
-        <label for="tipo-de-transacao">Tipo de transação</label> <br />
-        <select id="tipo-de-transacao">
-          <option value="a">Compra</option>
-          <option value="b">Venda</option>
-        </select>
+        <div id="tipo">
+          <label for="tipo-de-transacao">Tipo de transação</label> <br />
+          <select id="tipo-de-transacao">
+            <option value="a">Compra</option>
+            <option value="b">Venda</option>
+          </select>
+        </div>
         <form action="">
-          <label for="nmercadoria">Nome da Mercadoria</label> <br />
-          <input id="nmercadoria" type="text" /> <br />
-          <label for="valor">Valor</label> <br />
-          <input id="valor" type="number" /> <br />
+          <div id="mercadoria">
+            <label for="nmercadoria">Nome da Mercadoria</label> <br />
+            <input id="nmercadoria" type="text" /> <br />
+          </div>
+          <div id="value">
+            <label for="valor">Valor</label> <br />
+            <input id="valor" type="number" /> <br />
+          </div>
         </form>
 
         <label for="botao-transacao"></label>
