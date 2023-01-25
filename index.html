@@ -15,66 +15,68 @@
   </head>
 
   <body>
-    <!--SIDEBAR IPHONE0-->
-    <div class="sidebar">
-      <img id="hora" src="assets/imagens/9_42 AM.svg" alt="9:42" />
-      <img id="rede" src="assets/imagens/Frame 6.svg" alt="frame 6" />
-      <img id="bateria" src="assets/imagens/Frame 8.svg" alt="frame 8" />
+    <div class="content">
+      <!--SIDEBAR IPHONE0-->
+      <div class="sidebar">
+        <img id="hora" src="assets/imagens/9_42 AM.svg" alt="9:42" />
+        <img id="rede" src="assets/imagens/Frame 6.svg" alt="frame 6" />
+        <img id="bateria" src="assets/imagens/Frame 8.svg" alt="frame 8" />
+      </div>
+      <!-- Cabeçalho-->
+      <header id="cabecalho">
+        <nav class="container">
+          <img id="logo" src="assets/imagens/Logo.png" alt="logo" />
+          <h1 class="titulo">Controle Financeiro</h1>
+          <input type="checkbox" id="selecionar_menu" />
+          <label for="selecionar_menu" id="icone">
+            <img id="menu-logo" src="assets/imagens/menu.svg" alt="menu-logo" />
+          </label>
+          <!-- menu -->
+          <div id="header">
+            <ul>
+              <li><a class="menu" href="">Cadastro de transações</a></li>
+              <li><a class="menu" href="">Limpar dados</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--Transaction form-->
+      <section class="section" id="transaction">
+        <div id="transacao">
+          <div id="tipo">
+            <label for="tipo-de-transacao">Tipo de transação</label> <br />
+            <select id="tipo-de-transacao">
+              <option value="a">Compra</option>
+              <option value="b">Venda</option>
+            </select>
+          </div>
+          <form action="">
+            <div id="mercadoria">
+              <label for="nmercadoria">Nome da Mercadoria</label> <br />
+              <input placeholder="Input" id="nmercadoria" type="text" /> <br />
+            </div>
+            <div id="value">
+              <label for="valor">Valor</label> <br />
+              <input placeholder="R$ 0,00" id="valor" type="number" step="0.01" name="=quantity" min="0.01"/> <br />
+            </div>
+          </form>
+
+          <label for="botao-transacao"></label>
+          <button id="botao-transacao">Adicionar transação</button>
+          <hr id="linha" />
+        </div>
+      </section>
+
+      <!--Account statement-->
+      <section class="section" id="account">
+        <div id="account">
+          <p>Extrato de transações</p>
+          <p>mercadoria</p>
+          <p>Valor</p>
+          <p>Total</p>
+        </div>
+      </section>
     </div>
-    <!-- Cabeçalho-->
-    <header id="cabecalho">
-      <nav class="container">
-        <img id="logo" src="assets/imagens/Logo.png" alt="logo" />
-        <h1 class="titulo">Controle Financeiro</h1>
-        <input type="checkbox" id="selecionar_menu" />
-        <label for="selecionar_menu" id="icone">
-          <img id="menu-logo" src="assets/imagens/menu.svg" alt="menu-logo" />
-        </label>
-        <!-- menu -->
-        <div id="header">
-          <ul>
-            <li><a class="menu" href="">Cadastro de transações</a></li>
-            <li><a class="menu" href="">Limpar dados</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!--Transaction form-->
-    <section class="section" id="transaction">
-      <div id="transacao">
-        <div id="tipo">
-          <label for="tipo-de-transacao">Tipo de transação</label> <br />
-          <select id="tipo-de-transacao">
-            <option value="a">Compra</option>
-            <option value="b">Venda</option>
-          </select>
-        </div>
-        <form action="">
-          <div id="mercadoria">
-            <label for="nmercadoria">Nome da Mercadoria</label> <br />
-            <input id="nmercadoria" type="text" /> <br />
-          </div>
-          <div id="value">
-            <label for="valor">Valor</label> <br />
-            <input id="valor" type="number" /> <br />
-          </div>
-        </form>
-
-        <label for="botao-transacao"></label>
-        <button id="botao-transacao">Adicionar transação</button>
-        <hr id="linha" />
-      </div>
-    </section>
-
-    <!--Account statement-->
-    <section class="section" id="account">
-      <div id="account">
-        <p>Extrato de transações</p>
-        <p>mercadoria</p>
-        <p>Valor</p>
-        <p>Total</p>
-      </div>
-    </section>
   </body>
 </html>
