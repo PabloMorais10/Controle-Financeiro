@@ -145,6 +145,7 @@ bottom: 80.34%;
   background: #FFFFFF;
   border: 1px solid #979797;
   border-radius: 4px;
+  font-family: 'latoregular';
 
 }
 
@@ -225,8 +226,15 @@ bottom: 80.34%;
 
 }
 
-#tipo-de-transacao {
-  font-family: 'latoregular';
+#linha {
+  position: absolute;
+  width: 371px;
+  height: 0px;
+  left: -4px;
+  top: 290px;
+  
+  border: 1px solid #131212;
+
 }
 
 nav {
