@@ -5,6 +5,13 @@
 
 }
 
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+
 .sidebar {
   position: absolute;
   width: 411px;
@@ -66,14 +73,13 @@
 
 }
 
-.titulo {
+#titulo {
   position: absolute;
-  width: 411px;
-  height: 27.63px;
-  left: 100px;
-  top: -180px;
+  top: -190px;
+  left: calc(28%);
 
-  font-family: 'Lato';
+  
+  font-family: 'latoregular';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -81,10 +87,12 @@
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #333333;
 
+
 }
+
+
 
 #menu-logo {
   position: absolute;
@@ -102,18 +110,19 @@
   height: 290px;
   left: 20px;
   right: 20px;
-  top: 110px;
+  top: 118px;
   font-family: 'latoregular';
   margin-top: 17px;
 
 }
 
-#tipo{
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 80.34%;
+#tipo {
+  position: absolute;
+  width: 3;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 80.34%;
 
 }
 
@@ -128,6 +137,8 @@ bottom: 80.34%;
 
 #value {
   position: absolute;
+  width: 371px;
+  height: 55px;
   left: 0%;
   right: 0%;
   top: 153.67px;
@@ -146,7 +157,8 @@ bottom: 80.34%;
   border: 1px solid #979797;
   border-radius: 4px;
   font-family: 'latoregular';
-  color:  #888888;;
+  color: #888888;
+  ;
 
 }
 
@@ -179,9 +191,11 @@ bottom: 80.34%;
   width: 371px;
   height: 281px;
   left: 20px;
-  top: 420px;
+  top: 449px;
   font-family: 'latoregular';
   background: #FFFFFF;
+
+  flex: none;
 
 }
 
@@ -230,12 +244,14 @@ bottom: 80.34%;
   position: absolute;
   width: 371px;
   height: 0px;
-  left: -4px;
-  top: 290px;
-  
-  border: 1px solid #131212;
+  left: -1px;
+  top: 275px;
 
+  border: 1px solid #979797;
+  
 }
+
+
 
 nav {
   width: 100%;
