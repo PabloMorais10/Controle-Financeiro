@@ -244,7 +244,7 @@
   border-right-width: 0px;
   border-bottom-width: 0px;
   border-left-width: 0px;
-  
+  margin-bottom: 28.33px;
 
 
 }
@@ -254,12 +254,11 @@
   width: 371px;
   height: 0px;
   left: -1px;
-  top: 275px;
-
+  top: 280px;
   border: 1px solid #979797;
+  margin: 0px;
 
 }
-
 
 
 nav {
