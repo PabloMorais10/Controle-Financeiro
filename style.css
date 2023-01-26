@@ -78,7 +78,7 @@
   top: -190px;
   left: calc(28%);
 
-  
+
   font-family: 'latoregular';
   font-style: normal;
   font-weight: 600;
@@ -110,7 +110,7 @@
   height: 290px;
   left: 20px;
   right: 20px;
-  top: 118px;
+  top: 100px;
   font-family: 'latoregular';
   margin-top: 17px;
 
@@ -130,9 +130,10 @@
   position: absolute;
   left: 0%;
   right: 0%;
-  top: 130%;
-  bottom: 53.91%;
-  padding-bottom: 20px;
+  top: 70%;
+  margin-top: 20px;
+  
+  
 }
 
 #value {
@@ -181,7 +182,7 @@
   top: 0%;
   bottom: 80.34%;
   font-family: 'latoregular';
-  padding-bottom: 20px;
+  margin-bottom: -20px;
 
 }
 
@@ -189,7 +190,7 @@
 #account {
   position: absolute;
   width: 371px;
-  height: 281px;
+  height: 200px;
   left: 20px;
   top: 449px;
   font-family: 'latoregular';
@@ -248,7 +249,7 @@
   top: 275px;
 
   border: 1px solid #979797;
-  
+
 }
 
 
@@ -276,4 +277,14 @@ nav ul li a {
   font-family: 'latoregular';
   letter-spacing: .1em;
 
+}
+
+#footer {
+  width: 411px;
+  height: 8px;
+  flex: none;
+  background: black;
+  flex-grow: 0;
+  position: absolute;
+  bottom: 0px;
 }
