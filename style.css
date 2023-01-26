@@ -142,9 +142,11 @@
   height: 55px;
   left: 0%;
   right: 0%;
-  top: 153.67px;
+  top: 126.8px;
   bottom: 28.05%;
-  padding-bottom: 20px;
+  padding-top: 20px;
+
+  
 }
 
 #tipo-de-transacao {
@@ -236,7 +238,13 @@
   font-family: 'latoregular';
   width: 371px;
   height: 33px;
-  top: 228.67px;
+  top: 200px;
+  margin-top: 20.78px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  
 
 
 }
