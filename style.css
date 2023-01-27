@@ -132,8 +132,8 @@
   right: 0%;
   top: 70%;
   margin-top: 20px;
-  
-  
+
+
 }
 
 #value {
@@ -146,7 +146,7 @@
   bottom: 28.05%;
   padding-top: 20px;
 
-  
+
 }
 
 #tipo-de-transacao {
@@ -304,11 +304,53 @@ nav ul li a {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  
+
+  margin-bottom: 19px;
+
 }
 
 #extrato-mercadoria {
-  
+  position: absolute;
+  width: 72px;
+  height: 22px;
+
+  left: 30px;
+
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+
 }
 
+#extrato-valor {
+  position: absolute;
+  width: 33px;
+  height: 22px;
+  left: 296px;
 
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+
+
+}
+
+#extrato-total {
+  position: absolute;
+  top: 40px;
+}
+
+#frame {
+  position: absolute;
+  width: 371px;
+  height: 187px;
+  left: 0px;
+  top: 40px;
+
+}
