@@ -194,11 +194,11 @@
   width: 371px;
   height: 200px;
   left: 20px;
-  top: 449px;
+  top: 400px;
   font-family: 'latoregular';
   background: #FFFFFF;
-
   flex: none;
+  margin-top: 38px;
 
 }
 
@@ -295,3 +295,20 @@ nav ul li a {
   position: absolute;
   bottom: 0px;
 }
+
+#extrato {
+  text-align: center;
+
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  
+}
+
+#extrato-mercadoria {
+  
+}
+
+
