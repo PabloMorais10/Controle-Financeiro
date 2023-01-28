@@ -249,14 +249,19 @@
 
 }
 
-#linha {
+.linha {
+  border: 1px solid #979797;
+  margin: 0px;
+
+}
+
+#transaction-linha {
   position: absolute;
   width: 371px;
   height: 0px;
   left: -1px;
   top: 280px;
-  border: 1px solid #979797;
-  margin: 0px;
+ 
 
 }
 
@@ -343,7 +348,38 @@ nav ul li a {
 
 #extrato-total {
   position: absolute;
-  top: 40px;
+  width: 72px;
+  height: 18px;
+  left: 30px;
+  top: 151px;
+
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+
+
+}
+
+
+#extrato-lucro {
+  position: absolute;
+  width: 98px;
+  height: 18px;
+  left: 263px;
+  top: 169px;
+
+
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: right;
+
+  color: #000000;
 }
 
 #frame {
@@ -355,20 +391,47 @@ nav ul li a {
 
 }
 
-#lucro {
+#account-linha-1 {
   position: absolute;
-  width: 98px;
-  height: 18px;
-  left: 263px;
-  top: 169px;
-  
-  
-  font-family: 'latoregular';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 20px;
-  text-align: right;
+  width: 371px;
+  height: 0px;
+  left: 0px;
+  top: 22px;
 
-  color: #000000;
+}
+
+#account-linha-2 {
+  position: absolute;
+  width: 371px;
+  height: 0px;
+  left: 0px;
+  top: 71px;
+
+} 
+
+#account-linha-3 {
+  position: absolute;
+  width: 371px;
+  height: 0px;
+  left: 0px;
+  top: 104px;
+
+}
+
+#account-linha-4 {
+  position: absolute;
+  width: 371px;
+  height: 0px;
+  left: 0px;
+  top: 137px;
+
+}
+
+#account-linha-5 {
+  position: absolute;
+  width: 371px;
+  height: 0px;
+  left: 0px;
+  top: 140px;
+
 }
