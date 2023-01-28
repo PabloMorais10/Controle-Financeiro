@@ -261,7 +261,7 @@
   height: 0px;
   left: -1px;
   top: 280px;
- 
+
 
 }
 
@@ -407,7 +407,7 @@ nav ul li a {
   left: 0px;
   top: 71px;
 
-} 
+}
 
 #account-linha-3 {
   position: absolute;
@@ -435,3 +435,132 @@ nav ul li a {
   top: 140px;
 
 }
+
+.account-sinal {
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+
+.account-mercadoria {
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+}
+
+.account-valor {
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  text-align: right;
+
+  color: #000000;
+}
+
+#account-positivo-1 {
+  position: absolute;
+  width: 9px;
+  height: 25.35px;
+  left: 10px;
+  top: 29px;
+
+}
+
+#account-mercadoria-1 {
+  position: absolute;
+  width: 231px;
+  height: 34px;
+  left: 30px;
+  top: 29px;
+}
+
+#account-valor-1 {
+  position: absolute;
+  width: 98px;
+  height: 34px;
+  left: 263px;
+  top: 29px;
+
+
+}
+
+#account-negativo {
+  position: absolute;
+  width: 9px;
+  height: 25.35px;
+  left: 10px;
+  top: 78px;
+
+}
+
+#account-mercadoria-2 {
+  position: absolute;
+  width: 231px;
+  height: 18px;
+  left: 30px;
+  top: 78px;
+
+}
+
+#account-valor-2 {
+
+  position: absolute;
+  width: 98px;
+  height: 18px;
+  left: 263px;
+  top: 78px;
+
+}
+
+#account-positivo-2 {
+
+  position: absolute;
+  width: 9px;
+  height: 25.35px;
+  left: 10px;
+  top: 111px;
+
+}
+
+#account-mercadoria-3 {
+  position: absolute;
+  width: 231px;
+  height: 18px;
+  left: 30px;
+  top: 111px;
+
+}
+
+#account-valor-3 {
+  position: absolute;
+  width: 98px;
+  height: 18px;
+  left: 263px;
+  top: 111px;
+
+}
+
+#account-total {
+  position: absolute;
+  width: 98px;
+  height: 18px;
+  left: 263px;
+  top: 151px;
+  
+}
+
+
+
