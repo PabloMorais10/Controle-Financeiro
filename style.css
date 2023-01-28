@@ -354,3 +354,21 @@ nav ul li a {
   top: 40px;
 
 }
+
+#lucro {
+  position: absolute;
+  width: 98px;
+  height: 18px;
+  left: 263px;
+  top: 169px;
+  
+  
+  font-family: 'latoregular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: right;
+
+  color: #000000;
+}
