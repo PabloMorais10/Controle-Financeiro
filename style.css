@@ -228,9 +228,16 @@
 }
 
 #header {
-  width: 250px;
-  height: 100%;
   position: absolute;
+  width: 351px;
+  height: 1000px;
+  right: -350px;
+  top: -217px;
+  z-index: 1;
+
+  background: #333333;
+
+ 
 }
 
 #botao-transacao {
@@ -283,13 +290,17 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
   text-decoration: none;
   font-size: 16px;
   font-family: 'latoregular';
   letter-spacing: .1em;
 
 }
+
+#selecionar_menu:checked ~ #header {
+  transform: translatex(-350px);
+}
+
 
 #footer {
   width: 411px;
