@@ -1,0 +1,189 @@
+@media screen and (min-width: 760px ) {
+  
+  .sidebar {
+    width: 100%;
+  
+  }
+
+  #cabecalho {
+    width: 100%;
+  }
+
+  #menu-logo {
+    left: 700px;
+  }
+  #titulo {
+    left: 305px;
+
+  }
+
+  #transaction {
+    position: absolute;
+    width: 728px;
+    height: 189px;
+    left: 20px;
+    top: 104px;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 4px;
+  }
+
+  #nova-transacao {
+    position: absolute;
+    display: flex;
+    width: 174px;
+    height: 20px;
+    left: 305px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+
+    font-family: 'latoregular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #000000;
+
+    }
+
+    #tipo  {
+      position: absolute;
+      left: 2.75%;
+      right: 76.65%;
+      top: 105%;
+      bottom: 37.57%;
+      height: 32px;
+      
+      
+    }
+
+    #tipo-de-transacao {
+
+      width: 150px;
+      margin-right: 20px;
+    
+
+      
+    }
+
+    #mercadoria {
+      left: 26%;
+
+     
+    
+    }
+
+    #nmercadoria {
+      margin-right: 20px;
+      width: 359px;
+
+    }
+
+    #value {
+      width: 150px;
+      top: 70%;
+      left: 78%;
+    }
+
+    #valor {
+      width: 140px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    #botao-transacao {
+      top: 114px;
+      left: 69.90%;
+      width: 200px;
+      height: 32px; 
+
+      margin-right: 20px;
+      margin-bottom: 20.22px;
+
+    }
+
+    #transaction-linha {
+      display: none;
+    }
+
+    #account {
+      width: 728px;
+      height: 281px;
+      margin-top: 23px;
+      top: 314px;
+
+    }
+
+    #extrato {
+      margin-top: 21px;
+    }
+
+    #frame {
+      width: 728px;
+      height: 187px;
+      margin-top: 19px;
+    }
+
+    #account-linha-1 {
+
+      width: 728px;
+    }   #account-linha-2 {
+
+      width: 728px;
+    }   #account-linha-3 {
+
+      width: 728px;
+    }   #account-linha-4 {
+
+      width: 728px;
+    }   #account-linha-5 {
+
+      width: 728px;
+    }
+
+    #account-valor-1 {
+    
+      text-align: right;
+      left: 612px;
+      margin-right: 20px;
+
+
+    } #account-valor-2 {
+    
+      text-align: right;
+      left: 612px;
+      margin-right: 20px;
+
+
+    } #account-valor-3 {
+    
+      text-align: right;
+      left: 612px;
+      margin-right: 20px;
+
+
+    }
+    
+    #extrato-valor {
+      text-align: right;
+      left: 675px;
+      margin-right: 20px;
+    }
+
+    #account-total {
+      text-align: right;
+      left: 612px;
+      margin-right: 20px;
+    }
+
+    #extrato-lucro {
+      text-align: right;
+      left: 612px;
+      margin-right: 20px;
+    }
+}
