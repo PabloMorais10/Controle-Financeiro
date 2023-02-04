@@ -64,7 +64,7 @@
 
 
 #logo {
-  position: absolute;
+  position: relative;
   width: 30px;
   height: 27.63px;
   left: 15px;
@@ -98,7 +98,7 @@
   position: absolute;
   width: 30px;
   height: 27.63px;
-  left: 370px;
+  left: 340px;
   top: -180px;
   font-family: 'latoregular'
 
@@ -114,6 +114,10 @@
   font-family: 'latoregular';
   margin-top: 17px;
 
+}
+
+#nova-transacao {
+  display: none;
 }
 
 #tipo {
@@ -231,11 +235,11 @@
   position: absolute;
   width: 351px;
   height: 707px;
-  right: -350px;
+  right: 0px;
   top: -217px;
   z-index: 1;
   padding: 20px;
-
+  display: none;
   background: #333333;
 
  
@@ -340,7 +344,7 @@ nav ul li a {
 }
 
 #selecionar_menu:checked ~ #header {
-  transform: translatex(-350px);
+  display: flex;
 }
 
 
@@ -621,5 +625,103 @@ nav ul li a {
   height: 16px;
   left: 20px;
   top: 20px;
+
+}
+
+@media screen and (min-width: 760px ) {
+  
+  .sidebar {
+    width: 100%;
+  
+  }
+
+  #cabecalho {
+    width: 100%;
+  }
+
+  #menu-logo {
+    left: 700px;
+  }
+  #titulo {
+    left: 305px;
+
+  }
+
+  #transaction {
+    position: absolute;
+    width: 728px;
+    height: 189px;
+    left: 20px;
+    top: 104px;
+    margin-top: 20px;
+
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 4px;
+  }
+
+  #nova-transacao {
+    position: absolute;
+    display: flex;
+    width: 174px;
+    height: 20px;
+    left: 305px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+
+    font-family: 'latoregular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #000000;
+
+    }
+
+    #tipo  {
+      position: absolute;
+      left: 2.75%;
+      right: 76.65%;
+      top: 105%;
+      bottom: 37.57%;
+      height: 32px;
+      
+      
+    }
+
+    #tipo-de-transacao {
+
+      width: 150px;
+      margin-right: 20px;
+    
+
+      
+    }
+
+    #mercadoria {
+      left: 26%;
+
+     
+    
+    }
+
+    #nmercadoria {
+      margin-right: 20px;
+      width: 359px;
+
+    }
+
+    #value {
+      top: 70%;
+      left: 78%;
+    }
+
+    #valor {
+      width: 140px;
+      margin-right: 20px;
+    }
 
 }
