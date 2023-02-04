@@ -719,6 +719,7 @@ nav ul li a {
     }
 
     #value {
+      width: 150px;
       top: 70%;
       left: 78%;
     }
@@ -726,12 +727,18 @@ nav ul li a {
     #valor {
       width: 140px;
       margin-right: 20px;
+      margin-bottom: 20px;
     }
 
     #botao-transacao {
-      top: 120px;
-      left: 80%;
-      width: 
+      top: 114px;
+      left: 69.90%;
+      width: 200px;
+      height: 32px; 
+
+      margin-right: 20px;
+      margin-bottom: 20.22px;
+
       
 
     }
