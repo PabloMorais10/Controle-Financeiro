@@ -1,16 +1,21 @@
 @media screen and (min-width: 760px ) {
   
   .sidebar {
-    width: 100%;
+    width: 768px;
   
   }
 
   #cabecalho {
-    width: 100%;
+    width: 768px;
+  }
+
+  #logo {
+    margin-left: 22px;
+    left: 1px;
   }
 
   #menu-logo {
-    left: 700px;
+    left: 664px;
   }
   #titulo {
     left: 305px;
@@ -185,5 +190,15 @@
       text-align: right;
       left: 612px;
       margin-right: 20px;
+    }
+
+    #header {
+      width: 252px;
+      height: 1000px;
+
+    }
+
+    #cadastro_transacoes {
+      
     }
 }
