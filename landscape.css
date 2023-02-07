@@ -1,4 +1,236 @@
-@media screen and (min-width: 1112px ) {
+@media screen and (min-width: 1112px) {
 
-  
+  .sidebar {
+    width: 1112px;
+
+  }
+
+  #cabecalho {
+    width: 1112px;
+    height: 80px;
+    margin-top: 0px;
+    margin-bottom: 26px;
+
+  }
+
+  #icone {
+    display: none;
+  }
+
+
+  #logo {
+    width: 40px;
+    height: 36.84px;
+    margin-left: 22px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-right: 20px;
+    left: 1px;
+    top: -200px;
+  }
+
+  #menu-logo {
+    display: none;
+  }
+
+  #titulo {
+    position: absolute;
+    width: 411px;
+    height: 43px;
+    left: 82px;
+    top: -200px;
+    margin-top: 19px;
+    margin-bottom: 18px;
+    margin-right: 249px;
+
+    font-family: 'Latoregular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+
+  }
+
+  .navigation {
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    right: 1px;
+    top: -200px;
+    display: flex;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    background: #FFFFFF;
+  }
+
+
+  #transações_cadastro {
+    position: absolute;
+    width: 160px;
+    height: 32px;
+    left: 20px;
+    top: -20px;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    color: #333333;
+
+
+  }
+
+  #dados_limpar {
+    position: absolute;
+    width: 97px;
+    height: 32px;
+    left: 233px;
+    top: -20px;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 40px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    color: #333333;
+
+
+  }
+
+  #navigation_linha {
+    position: absolute;
+    width: 20px;
+    height: 0px;
+    left: 185px;
+    top: -7px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+
+    border: 1px solid #979797;
+    transform: rotate(90deg);
+
+  }
+
+  #transaction {
+    position: absolute;
+    width: 400px;
+    height: 344px;
+    left: 0px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+  #nova-transacao {
+
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    left: 0px;
+
+    margin-top: 20px;
+    margin-left: 138px;
+    margin-right: 138px;
+
+    text-align: center;
+
+    font-family: 'Latoregular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    white-space: nowrap;
+
+    color: #333333;
+
+
+  }
+
+
+  #type_transaction {
+    white-space: nowrap;
+  } 
+
+  #tipo-de-transacao {
+
+ 
+
+
+
+  }
+
+  #mercadoria {
+    left: 26%;
+    display: none;
+
+
+
+  }
+
+  #nmercadoria {
+    margin-right: 20px;
+    width: 359px;
+    display: none;
+
+  }
+
+  #value {
+    width: 150px;
+    top: 70%;
+    left: 78%;
+    display: none;
+  }
+
+  #valor {
+    width: 140px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  #botao-transacao {
+    top: 114px;
+    left: 69.90%;
+    width: 200px;
+    height: 32px;
+
+    margin-right: 20px;
+    margin-bottom: 20.22px;
+
+    display: none;
+  }
+
+
+  #account {
+    display: none;
+  }
+
 }
