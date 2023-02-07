@@ -199,6 +199,13 @@
     }
 
     #cadastro_transacoes {
+      left: 19%;
+      padding-right: 20px;
       
+    }
+
+    #limpar_dados {
+      left: 50%;
+      padding-right: 20px;
     }
 }
