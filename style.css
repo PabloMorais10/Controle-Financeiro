@@ -641,3 +641,7 @@ top: 1016px;
 
 background: #333333;
 }
+
+.navigation {
+  display: none;
+}

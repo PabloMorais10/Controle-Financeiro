@@ -207,5 +207,10 @@
     #limpar_dados {
       left: 50%;
       padding-right: 20px;
+
+    }
+
+    .navigation {
+      display: none;
     }
 }
