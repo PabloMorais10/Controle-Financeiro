@@ -634,12 +634,12 @@ nav ul li a {
 
 #footer {
   position: absolute;
-width: 768px;
-height: 8px;
-left: 0px;
-top: 1016px;
-
-background: #333333;
+  width: 1112px;
+  height: 8px;
+  left: 0px;
+  top: 826px;
+  
+  background: #333333;
 }
 
 .navigation {
