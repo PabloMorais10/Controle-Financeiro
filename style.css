@@ -48,9 +48,12 @@
   height: 100%;
   width: 80%;
   
+  
 }
-
-
+.links a.menu-aberto {
+  padding: 0px;
+  
+}
 
  .links a {
   padding: 0 20px;
@@ -63,6 +66,8 @@
   width: calc(100% - 40px);
   font-family: 'lato';
   font-style: normal;
+  white-space: nowrap;
+  
 
 
 }
@@ -79,7 +84,12 @@
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px){
+
+  .container {
+    height: 80px;
+
+  }
 
   #titulo {
     text-align: left;
@@ -94,6 +104,8 @@
     justify-content: center;
     align-items: center;
     height: 40px;
+    margin: 20px;
+    
 
   }
 
@@ -101,6 +113,12 @@
     color: #333;
     width: initial;
     height: initial;
+  }
+
+  a.menu-aberto {
+    padding: 0px;
+    margin: 20px;
+
   }
 
   a.menu-close {
