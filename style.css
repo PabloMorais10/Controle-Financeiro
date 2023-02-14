@@ -21,8 +21,7 @@
   margin: 22px;
 
 }
-
-#menu-logo {
+.menu {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -31,32 +30,62 @@
 
 }
 
+.menu:hover .links {
+  display: flex;
 
-#header nav {
+}
+
+.links {
+  display: none;
   position: fixed;
   top: 0px;
   right: 0px;
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
   background-color: #333;
   height: 100%;
   width: 80%;
-
+  
 }
+
+
 
  .links a {
   padding: 0 20px;
   height: 32px;
   font-size: 16px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: #ffff;
+  width: calc(100% - 40px);
 
 }
 
+.links a:hover {
+  background-color: #c4c4c4;
+  color: #333;
+}
+
 .links a.menu-close {
-  width: calc(100% - 40px);
+  
   text-align: left;
   padding-top: 20px;
+}
+
+
+@media screen and (min-width: 700px) {
+
+  #titulo {
+    text-align: left;
+  }
+
+  .links {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: none;
+  }
 }
 
