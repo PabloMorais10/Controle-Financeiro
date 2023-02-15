@@ -10,16 +10,14 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/fonts/lato/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
 
   <body>
-    <div class="content">
-
       <!-- Cabeçalho-->
-      <header id="cabecalho">
-        <nav class="container">
+      <header class="header-wrapper">
+        <div class="container">
           <img id="logo" src="assets/imagens/logo.svg" alt="logo" />
           <h1 id="titulo">Controle Financeiro</h1>
           <!-- menu -->
@@ -32,16 +30,16 @@
               <a class="menu-aberto" href="javascript:void(0)">Limpar dados</a></li>
             </nav>
             </div>
-        </nav>
+        </div>
       </header>
 
       <!--Transaction form-->
-      <section class="section" id="transaction">
-        <div id="transacao">
+      <section class="section-form">
+        <div class="transaction">
           <h1 id="nova-transacao">Nova Transação</h1>
           <div id="tipo">  
-            <label id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> <br />
-            <select id="tipo-de-transacao">
+            <label class="" id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> <br />
+            <select class="form-transaction" >
               <option value="a">Compra</option>
               <option value="b">Venda</option>
             </select>
@@ -49,11 +47,11 @@
           <form action="">
             <div  id="mercadoria">
               <label id="" for="nmercadoria">Nome da Mercadoria</label> <br />
-              <input placeholder=" Input" id="nmercadoria" type="text" /> <br />
+              <input class="form-transaction" placeholder=" Input" id="nmercadoria" type="text" /> 
             </div>
             <div id="value">
               <label  for="valor">Valor</label> <br />
-              <input
+              <input class="form-transaction" 
                 placeholder=" R$ 0,00"
                 id="valor"
                 type="number"
@@ -61,53 +59,59 @@
                 name="=quantity"
                 min="0.01"
               />
-              <br />
             </div>
           </form>
 
-          <label for="botao-transacao"></label>
-          <button type="submit" id="botao-transacao"> Adicionar transação </button>
+          <label for="botao-transaction"></label>
+          <button  class="form-transaction" type="submit" id="botao-transaction"> Adicionar transação </button>
 
           <hr class="linha" id="transaction-linha" />
         </div>
       </section>
 
       <!--Account statement-->
-      <section class="section" id="account">
-        <p id="extrato">Extrato de transações</p>
-        <div id="frame">
-          <p id="extrato-mercadoria">Mercadoria</p>
-          <p id="extrato-valor">Valor</p>
-          <hr class="linha" id="account-linha-1" />
-          <p class="account-sinal" id="account-positivo-1">+</p>
-          <p class="account-mercadoria" id="account-mercadoria-1">
-            Lorem ipsum dolor sit amet <br />
-            consectetur
-          </p>
-          <p class="account-valor" id="account-valor-1">R$ 12.999.99</p>
-          <hr class="linha" id="account-linha-2" />
-          <p class="account-sinal" id="account-negativo">-</p>
-          <p class="account-mercadoria" id="account-mercadoria-2">
-            Quis nostrud exercitation
-          </p>
-          <p class="account-valor" id="account-valor-2">R$ 99,99</p>
-          <hr class="linha" id="account-linha-3" />
+      <section class="section-account"> 
+        <div class="account" id="frame">
+          <p id="extrato">Extrato de transações</p>
 
-          <p class="account-sinal" id="account-positivo-2">+</p>
-          <p class="account-mercadoria" id="account-mercadoria-3">
-            Lorem ipsum
+          <div class="mercadoria">
+          <p>Mercadoria</p>
+          <p>Valor</p>
+        </div>
+        <hr class="linha" id="account-linha-2" />
+
+        <div class="mercadoria-1">
+          <p>
+           + &nbsp &nbsp Lorem ipsum dolor sit amet <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  consectetur
           </p>
-          <p class="account-valor" id="account-valor-3">R$ 9,99</p>
+          <p>R$ 12.999.99</p>
+        </div>
+          <hr class="linha" id="account-linha-2" />
+          <div class="mercadoria-2" >
+          <p>
+           - &nbsp &nbsp  Quis nostrud exercitation
+          </p>
+          <p>R$ 99,99</p>
+        </div>
+          <hr class="linha" id="account-linha-3" />
+          <div class="mercadoria-3">
+
+          <p>
+          + &nbsp &nbsp Lorem ipsum
+          </p>
+          <p>R$ 9,99</p>
+        </div>
 
           <hr class="linha" id="account-linha-4" />
           <hr class="linha" id="account-linha-5" />
-
+          <div class="mercadoria-4">
           <p id="extrato-total">Total</p>
           <p class="account-valor" id="account-total">R$ 12.909,99</p>
-          <p id="extrato-lucro">[LUCRO]</p>
+        </div>
+        <p id="extrato-lucro">[LUCRO]</p>
+        
         </div>
       </section>
-      <div id="footer"></div>
     </div>
   </body>
 </html>
