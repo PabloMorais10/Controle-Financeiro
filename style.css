@@ -261,7 +261,10 @@
 
 }
 
+
 @media screen and (min-width: 600px) {
+
+  
   .links {
     height: 100%;
     width: 40%;
@@ -289,15 +292,7 @@
 
   }
 
-
-
-
-  .section-account {
- 
-
-}
-
-
+  
 
 
 @media screen and (min-width: 1100px) {
@@ -312,8 +307,7 @@
 
   .teste11 {
       display: flex;
-      align-items: center;
-      justify-content: center;
+    
       max-width: 1112px;
       width: 100%;
       margin-left: 200px;
@@ -378,7 +372,7 @@
     flex-direction: column;
     padding: 20px;
 
-    display: ;
+    display: flex;
 
     border: 1px solid #979797;
     border-radius: 4px;
