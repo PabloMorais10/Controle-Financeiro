@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
 
-  <body>
+  <body class="body">
       <!-- Cabeçalho-->
       <header class="header-wrapper">
         <div class="container">
@@ -34,24 +34,19 @@
       </header>
 
       
-        <div class="teste11">    
+        <div class="footer">    
           <!--Transaction form-->
         <section class="section">
         <div class="transaction">
           <h1 id="nova-transacao">Nova Transação</h1>
-          <div id="tipo">  
             <label class="" id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> <br />
             <select class="form-transaction" >
               <option value="a">Compra</option>
               <option value="b">Venda</option>
             </select>
-          </div>
           <form action="">
-            <div  id="mercadoria">
               <label id="" for="nmercadoria">Nome da Mercadoria</label> <br />
               <input class="form-transaction" placeholder=" Input" id="nmercadoria" type="text" /> 
-            </div>
-            <div id="value">
               <label  for="valor">Valor</label> <br />
               <input class="form-transaction" 
                 placeholder=" R$ 0,00"
@@ -61,7 +56,6 @@
                 name="=quantity"
                 min="0.01"
               />
-            </div>
           </form>
 
           <label for="botao-transaction"></label>
