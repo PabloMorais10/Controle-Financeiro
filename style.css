@@ -263,8 +263,7 @@
 
 
 @media screen and (min-width: 600px) {
-
-  
+   
   .links {
     height: 100%;
     width: 40%;
@@ -291,8 +290,8 @@
     color: #000000;
 
   }
-
-  
+ 
+  }
 
 
 @media screen and (min-width: 1100px) {
@@ -314,7 +313,7 @@
       margin-right: 200px;
     }
 
-  }
+  
 
   .container {
     display: flex;
