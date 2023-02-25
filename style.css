@@ -59,8 +59,8 @@
   background-color: #333;
   height: 100%;
   width: 80%;
-
-
+  z-index: 10;
+  
 }
 
 .links a.menu-aberto {
@@ -91,7 +91,6 @@
 }
 
 .links a.menu-close {
-
   text-align: left;
   padding-top: 20px;
 }
