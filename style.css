@@ -1,8 +1,7 @@
 * {
-  font-family: 'lato' sans-serif;
+  font-family: 'Lato';
+  font-style: normal;
 }
-
-
 .container {
   display: flex;
   align-items: center;
@@ -21,14 +20,14 @@
 
 }
 
-#titulo {
+.titulo {
   width: 100%;
   text-align: center;
-  font-size: 20px;
-  font-family: 'lato';
+  font-family: 'Lato';
   font-style: normal;
-
-
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 #logo {
@@ -124,6 +123,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  color: #888888;
 }
 
 #botao-transaction {
@@ -261,8 +261,19 @@
 
 }
 
+.mercadoria {
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
 
-@media screen and (min-width: 600px) {
+
+color: #000000;
+}
+
+
+@media screen and (min-width: 690px) {
 
   .links {
     height: 100%;
@@ -291,30 +302,29 @@
   
     }
 
-    .nova-transacao {
-      
-    }
 
-    .teste {
+    .transacao {
       display: flex;
 
       justify-content: space-around;
     }
   
-  .teste2 {
+  .tipo-transacao {
     padding: 20px;
+    width: 50%;
   }
 
-  .teste3 {
+  .nome-mercadoria {
     padding: 20px;
-    width: 348px;
+    width: 100%;
   }
  
-  .teste4 {
+  .valor-mercadoria {
     padding: 20px;
+    width: 50%;
   }
 
-  .teste8 {
+  .botao-adicionar-transacao {
     display: flex;
     justify-content: right;
     padding: 0 20px;
@@ -391,6 +401,8 @@
 
   #titulo {
     text-align: left;
+    line-height: 24px;
+    color: #333333;
   }
 
   .links {
@@ -436,8 +448,6 @@
     padding: 0 14px;
 
     display: flex;
-
-   
   }
 
   #botao-transaction {
@@ -451,6 +461,37 @@
     display: none;
   }
 
+  .nova-transacao {
+    padding-bottom: 20px;
+  }
+
+  .transacao {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tipo-transacao {
+    padding: 0;
+    width: 100%;
+  }
+
+  .nome-mercadoria {
+    padding: 0;
+    width: 100%;
+    
+  }
+ 
+  .valor-mercadoria {
+    padding: 0;
+    width: 100%;
+  }
+
+  .botao-adicionar-transacao {
+    display: flex;
+    justify-content: right;
+    padding: 0 20px;
+
+    }
 
   .section-account {
 

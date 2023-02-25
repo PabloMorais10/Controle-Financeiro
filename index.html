@@ -19,7 +19,7 @@
       <header class="header-wrapper">
         <div class="container">
           <img id="logo" src="assets/imagens/logo.svg" alt="logo" />
-          <h1 id="titulo">Controle Financeiro</h1>
+          <h1 class="titulo" id="titulo">Controle Financeiro</h1>
           <!-- menu -->
           <div  class="menu">
             <img  class="menu-toggle" src="assets/imagens/menu.svg" alt="">
@@ -41,20 +41,20 @@
           <div class="nova-transacao">
           <h1 id="nova-transacao">Nova Transação</h1>
         </div>
-        <div class="teste">
-        <div  class="teste2">
+        <div class="transacao">
+        <div  class="tipo-transacao">
             <label class="" id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> 
             <select class="form-transaction" >
               <option value="a">Compra</option>
               <option value="b">Venda</option>
             </select>
           </div>
-          <div class="teste3">
+          <div class="nome-mercadoria">
           <form action="">
               <label id="" for="nmercadoria">Nome da Mercadoria</label> <br />
               <input class="form-transaction" placeholder=" Input" id="nmercadoria" type="text" /> 
             </div>
-            <div class="teste4">
+            <div class="valor-mercadoria">
               <label  for="valor">Valor</label> <br />
               <input class="form-transaction" 
                 placeholder=" R$ 0,00"
@@ -67,7 +67,7 @@
           </form>
         </div>
       </div>
-          <div class="teste8">
+          <div class="botao-adicionar-transacao">
           <label for="botao-transaction"></label>
           <button  class="form-transaction" type="submit" id="botao-transaction"> Adicionar transação </button>
         </div>
@@ -110,7 +110,7 @@
 
           <hr class="linha" id="account-linha-4" />
           <hr class="linha" id="account-linha-5" />
-          <div class="mercadoria-4">
+          <div class="mercadoria">
           <p id="extrato-total">Total</p>
           <p class="account-valor" id="account-total">R$ 12.909,99</p>
         </div>
