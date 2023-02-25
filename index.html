@@ -38,15 +38,23 @@
           <!--Transaction form-->
         <section class="section">
         <div class="transaction">
+          <div class="nova-transacao">
           <h1 id="nova-transacao">Nova Transação</h1>
-            <label class="" id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> <br />
+        </div>
+        <div class="teste">
+        <div  class="teste2">
+            <label class="" id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> 
             <select class="form-transaction" >
               <option value="a">Compra</option>
               <option value="b">Venda</option>
             </select>
+          </div>
+          <div class="teste3">
           <form action="">
               <label id="" for="nmercadoria">Nome da Mercadoria</label> <br />
               <input class="form-transaction" placeholder=" Input" id="nmercadoria" type="text" /> 
+            </div>
+            <div class="teste4">
               <label  for="valor">Valor</label> <br />
               <input class="form-transaction" 
                 placeholder=" R$ 0,00"
@@ -57,10 +65,12 @@
                 min="0.01"
               />
           </form>
-
+        </div>
+      </div>
+          <div class="teste8">
           <label for="botao-transaction"></label>
           <button  class="form-transaction" type="submit" id="botao-transaction"> Adicionar transação </button>
-
+        </div>
           <hr class="linha" id="transaction-linha" />
         </div>
       </section>

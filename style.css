@@ -263,35 +263,76 @@
 
 
 @media screen and (min-width: 600px) {
-   
+
   .links {
     height: 100%;
     width: 40%;
   }
+
   .section {
     display: flex;
     padding: 0;
-    
+
 
     margin: 20px;
 
     background: #FFFFFF;
     border: 1px solid #979797;
     border-radius: 4px;
+
+  }
+
+
+  .transaction {
+      display: flex;
+      flex-direction: column;
+      margin: 22px;
+      padding: 0px;
+  
+    }
+
+    .nova-transacao {
+      
+    }
+
+    .teste {
+      display: flex;
+
+      justify-content: space-around;
+    }
+  
+  .teste2 {
+    padding: 20px;
+  }
+
+  .teste3 {
+    padding: 20px;
+    width: 348px;
+  }
+ 
+  .teste4 {
+    padding: 20px;
+  }
+
+  .teste8 {
+    display: flex;
+    justify-content: right;
+    padding: 0 20px;
+  }
+
+  #botao-transaction {
+    height: 33px;
+    width: 200px;
+    display: grid;
+    margin: 0;
+    
+
     
   }
 
-  .transaction {
-    display: flex;
-  
-}
-
-  #botao-transaction{
+  #transaction-linha {
     display: none;
   }
-#transaction-linha{
-  display: none;
-}
 
   #nova-transacao {
     display: grid;
@@ -308,38 +349,45 @@
     color: #000000;
 
   }
- 
-  }
+
+}
 
 
 @media screen and (min-width: 1100px) {
 
-
-
-
   .header-wrapper {
     display: flex;
     width: 100%;
-    
+
   }
 
-  
+
 
   .footer {
-      display: flex;
-      width: 100%;
-     justify-content: center;
-    }
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 
-  
+
 
   .container {
     display: flex;
     height: 80px;
     width: 100%;
-   
+
 
   }
+
+   
+
+  .teste {
+    display: grid;
+    width: 100%;
+  
+   
+  }
+
 
   #titulo {
     text-align: left;
@@ -384,15 +432,19 @@
     width: 400px;
     height: 344px;
     margin: 0;
-    margin-top: 20px;
-    margin-left: 20px;
     flex-direction: column;
-    padding: 20px;
+    padding: 0 14px;
 
     display: flex;
 
-    border: 1px solid #979797;
-    border-radius: 4px;
+   
+  }
+
+  #botao-transaction {
+    display: grid;
+    width: 100%;
+    
+    
   }
 
   #transaction-linha {
