@@ -309,24 +309,25 @@ color: #000000;
     }
   
   .tipo-transacao {
-    padding: 20px;
+    padding: 10px;
     width: 50%;
   }
 
   .nome-mercadoria {
-    padding: 20px;
+    padding: 10px;
     width: 100%;
   }
  
   .valor-mercadoria {
-    padding: 20px;
+    padding: 10px;
     width: 50%;
   }
 
   .botao-adicionar-transacao {
     display: flex;
     justify-content: right;
-    padding: 0 20px;
+    padding: 0 10px;
+
   }
 
   #botao-transaction {
@@ -488,7 +489,7 @@ color: #000000;
   .botao-adicionar-transacao {
     display: flex;
     justify-content: right;
-    padding: 0 20px;
+    padding: 0 0px;
 
     }
 
