@@ -146,7 +146,20 @@
   border: 1px solid #979797;
 }
 
-#extrato {
+.section-account {
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+  height: 281px;
+  flex-direction: column;
+
+
+}
+
+.tituloExtrato {
+  
+  display: grid;
+  align-items: center;
   text-align: center;
   font-family: 'Lato';
   font-style: normal;
@@ -155,121 +168,11 @@
   line-height: 22px;
 
 
-  color: #000000;
-
-}
-
-.section-account {
-  display: flex;
-  padding: 0 20px;
-  width: 100%;
-  height: 281px;
-
-
-}
-
-.account {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  height: 281px;
-
-
 
   color: #000000;
 
 }
 
-
-.mercadoria {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 20px;
-
-
-}
-
-.mercadoria-1 {
-  justify-content: space-between;
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-
-
-
-}
-
-.mercadoria-2 {
-  justify-content: space-between;
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-
-
-
-}
-
-.mercadoria-3 {
-  justify-content: space-between;
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-
-
-
-}
-
-.mercadoria-4 {
-  justify-content: space-between;
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-
-
-}
-
-
-
-.linha {
-  border: 1px solid #979797;
-  width: 100%;
-  padding: 0px;
-  margin: 1px;
-
-}
-
-#extrato-lucro {
-  display: relative;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 50%;
-  padding: 0 20px;
-  margin: 0;
-  text-align: right;
-
-  color: #000000;
-
-
-}
-
-.mercadoria {
-  font-family: 'Lato';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 22px;
-
-
-color: #000000;
-}
 
 
 @media screen and (min-width: 690px) {
@@ -502,10 +405,6 @@ color: #000000;
     top: -350px;
     margin: 0px;
 
-  }
-
-  .account {
-    padding-top: 20px;
   }
 
 }
