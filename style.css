@@ -42,6 +42,7 @@
   justify-content: center;
   height: 100%;
   margin: 22px;
+  font-weight: 600;
 
 }
 
@@ -93,7 +94,7 @@
 
 .links a.menu-close {
   text-align: left;
-  padding-top: 20px;
+  width: 100%;
 }
 
 .transaction {
@@ -109,6 +110,7 @@
 
 #nova-transacao {
   display: none;
+  margin-top: 20px;
 }
 
 .form-transaction {
@@ -140,6 +142,13 @@
 
 
 
+}
+
+
+.extrato-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #transaction-linha {
@@ -174,7 +183,7 @@
 }
 
 
-table thead th {
+.extrato thead th {
   text-align: left;
   font-weight: 700;
   font-size: 14px;
@@ -183,7 +192,7 @@ table thead th {
 
 }
 
-table  tbody td{
+.extrato  tbody td{
   border-bottom: 1px solid #979797;
   font-weight: 400;
   font-size: 14px;
@@ -193,16 +202,21 @@ table  tbody td{
 
 }
 
-table tfoot tr th {
-  text-align: left;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  border-top: 1px solid #979797;
-  padding-bottom: 7px;
-  padding-top: 7px;
+.extrato-total {
+  margin-top: 3px;
+  
+
+
+  
+  
 }
 
+.extrato-total td {
+  border-top: 1px solid #979797;
+  font-size: 14px;
+  line-height: 16px;
+  width: 50%;
+}
 
 
 @media screen and (min-width: 690px) {
@@ -229,7 +243,7 @@ table tfoot tr th {
   .transaction {
     display: flex;
     flex-direction: column;
-    margin: 22px;
+    height: 189px;
     padding: 0px;
 
   }
@@ -237,8 +251,9 @@ table tfoot tr th {
 
   .transacao {
     display: flex;
-
+    height: 45%;
     justify-content: space-around;
+    margin-bottom: 20px;
   }
 
   .tipo-transacao {
@@ -378,6 +393,10 @@ table tfoot tr th {
     display: flex;
   }
 
+
+  #nova-transacao {
+    margin: 20px;
+  }
   #botao-transaction {
     display: grid;
     width: 100%;
@@ -396,6 +415,7 @@ table tfoot tr th {
   .transacao {
     display: flex;
     flex-direction: column;
+    height: 68%;
   }
 
   .tipo-transacao {
