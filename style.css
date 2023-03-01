@@ -2,6 +2,7 @@
   font-family: 'Lato';
   font-style: normal;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -60,7 +61,7 @@
   height: 100%;
   width: 80%;
   z-index: 10;
-  
+
 }
 
 .links a.menu-aberto {
@@ -148,7 +149,7 @@
 
 .section-account {
   display: flex;
-  padding: 0 20px;
+  padding: 21px;
   width: 100%;
   height: 281px;
   flex-direction: column;
@@ -157,7 +158,6 @@
 }
 
 .tituloExtrato {
-  
   display: grid;
   align-items: center;
   text-align: center;
@@ -171,6 +171,36 @@
 
   color: #000000;
 
+}
+
+
+table thead th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px solid #979797;
+
+}
+
+table  tbody td{
+  border-bottom: 1px solid #979797;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+table tfoot tr th {
+  text-align: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  border-top: 1px solid #979797;
+  padding-bottom: 7px;
+  padding-top: 7px;
 }
 
 
@@ -197,20 +227,20 @@
 
 
   .transaction {
-      display: flex;
-      flex-direction: column;
-      margin: 22px;
-      padding: 0px;
-  
-    }
+    display: flex;
+    flex-direction: column;
+    margin: 22px;
+    padding: 0px;
+
+  }
 
 
-    .transacao {
-      display: flex;
+  .transacao {
+    display: flex;
 
-      justify-content: space-around;
-    }
-  
+    justify-content: space-around;
+  }
+
   .tipo-transacao {
     padding: 10px;
     width: 50%;
@@ -220,7 +250,7 @@
     padding: 10px;
     width: 100%;
   }
- 
+
   .valor-mercadoria {
     padding: 10px;
     width: 50%;
@@ -238,9 +268,9 @@
     width: 200px;
     display: grid;
     margin: 0;
-    
 
-    
+
+
   }
 
   #transaction-linha {
@@ -292,14 +322,9 @@
 
   }
 
-   
 
-  .teste {
-    display: grid;
-    width: 100%;
-  
-   
-  }
+
+
 
 
   #titulo {
@@ -356,8 +381,8 @@
   #botao-transaction {
     display: grid;
     width: 100%;
-    
-    
+
+
   }
 
   #transaction-linha {
@@ -372,7 +397,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .tipo-transacao {
     padding: 0;
     width: 100%;
@@ -381,9 +406,9 @@
   .nome-mercadoria {
     padding: 0;
     width: 100%;
-    
+
   }
- 
+
   .valor-mercadoria {
     padding: 0;
     width: 100%;
@@ -394,7 +419,7 @@
     justify-content: right;
     padding: 0 0px;
 
-    }
+  }
 
   .section-account {
 
