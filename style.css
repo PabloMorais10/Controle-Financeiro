@@ -182,9 +182,17 @@
 
 }
 
+.thValor {
+  text-align: right;
+  padding-right: 37px;
+}
+
+.thMercadoria {
+  text-align: left;
+}
 
 .extrato thead th {
-  text-align: left;
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -199,15 +207,11 @@
   line-height: 16px;
   padding-bottom: 7px;
   padding-top: 7px;
-
+ 
 }
 
 .extrato-total {
   margin-top: 3px;
-  
-
-
-  
   
 }
 
@@ -215,7 +219,24 @@
   border-top: 1px solid #979797;
   font-size: 14px;
   line-height: 16px;
-  width: 50%;
+  padding-right: 7px;
+}
+
+.tdSinal {
+  width: 2%;
+  padding-left: 5px;
+}
+
+.tdMercadoria {
+  width: 60%;
+  padding-left: 5px;
+  
+}
+
+.tdValor {
+ width: 20%;
+ text-align: right;
+ padding-right: 7px;
 }
 
 
@@ -307,6 +328,8 @@
     color: #000000;
 
   }
+
+
 
 }
 
