@@ -13,8 +13,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    <!-- Scripts-->
-    <script src="scripts.js"></script>
+    
   </head>
 
   <body class="body">
@@ -27,17 +26,17 @@
           <div  class="menu">
             <img  class="menu-toggle" src="assets/imagens/menu.svg" alt="">
             <nav class="links" >
-              <a  class="menu-close" href="javascript:void(0)">X</a></li>
+              <a  class="menu-close" href="">X</a></li>
            
             
-              <a class="menu-aberto" href="javascript:void(0)">Cadastro de transações</a></li>
+              <a  href="javascript:void(0)">Cadastro de transações</a></li>
            
               <span> | </span>
               
-              <a class="menu-aberto" href="javascript:void(0)">Limpar dados</a></li>
+              <a id="clear" href="javascript:void(0)">Limpar dados</a></li>
             
             </nav>
-            </div>
+          </div>
         </div>
       </header>
 
@@ -64,7 +63,7 @@
                 </div>
                 <div class="valor-mercadoria">
                     <label  for="valor">Valor</label> <br />
-                    <input class="form-transaction" 
+                    <input id="value" class="form-transaction" 
                       placeholder=" R$ 0,00"
                       id="valor"
                       type="number"
@@ -124,6 +123,11 @@
           </table>
           </div>
       </section>
-    </div>  
+    </div> 
+    
+    <!-- Scripts-->
+    <script src="scripts.js"></script> 
   </body>
+  <!-- Scripts-->
+  <script src="scripts.js"></script> 
 </html>
