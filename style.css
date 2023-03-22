@@ -1,7 +1,12 @@
+
+@import url(modal.css);
+
+
 * {
   font-family: 'Lato';
   font-style: normal;
 }
+
 
 .container {
   display: flex;
@@ -10,6 +15,7 @@
   height: 60px;
   max-width: 1112px;
   width: 100%;
+  
 }
 
 
