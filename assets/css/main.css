@@ -1,0 +1,10 @@
+.transaction {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title_transaction {
+  display: none;
+}

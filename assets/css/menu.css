@@ -90,7 +90,7 @@
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    top: 500px;
+    
   }
 
   .menu ul li {
@@ -99,9 +99,9 @@
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 8px;
+    padding-top: 12px;
     text-align: center;
-    top: 500px;
+    
    
   }
 
