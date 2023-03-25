@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!--cabeçalho-->
     <header class="header">
       <section class="container">
         <img src="assets/imagens/logo.svg" alt="" class="logo">
@@ -32,11 +33,11 @@
             <img class="line-menu" src="assets/imagens/linha.svg" alt="">
             <li><a href="#">Cadastro de Transações</a></li>
           </ul>
-        </nav>
-        
+        </nav>     
       </section>
     </header>
-    <main>
+    <!-- Cadastro de Transacao-->
+    <main class="transaction-main">
       <section class="transaction">
         <h2 class="title_transaction">Nova Transação</h2>
         <div class="inputs_transaction">
@@ -49,14 +50,14 @@
           </div>
           <div>
             <label for="product">Nome da Mercadoria</label>
-            <input type="text" id="product" name="product" maxlength="64" class="input-data">
+            <input placeholder="Informe a Mercadoria" type="text" id="product" name="product" maxlength="64" class="input-data">
           </div>
           <div>
             <label for="value">Valor</label>
-            <input type="text" id="value" name="value" style="text-align: left;" maxlength="11" class="input-data">
+            <input placeholder="R$ 0,00" type="text" id="value" name="value" style="text-align: left;" maxlength="11" class="input-data">
           </div>
         </div>
-        <!--<button id="add">Adicionar Transação</button> -->
+        <button id="add">Adicionar Transação</button> 
 
 
       </section>

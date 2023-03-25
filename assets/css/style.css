@@ -1,18 +1,23 @@
-@import url(reset.css);
+
 @import url(modal.css);
 @import url(menu.css);
 @import url(header.css);
 @import url(main.css);
 
 
-
 * {
+  margin: 0;
+  padding: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
+  list-style: none
 }
 
+body {
+  width: 100%;
+}
 .container {
   display: flex;
   align-items: center;
@@ -35,7 +40,7 @@
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #333;

@@ -1,7 +1,7 @@
 .header {
   background-color: var(--clr-gray-1);
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
 }
 
 .header .container {
