@@ -1,0 +1,135 @@
+.menu {
+  background-color: #333;
+  bottom: 0;
+  position: fixed;
+  right: -300px;
+  top: 0;
+  transition: all 0.4s ease-in-out; /* Sliding animation */
+  width: 300px;
+  z-index: 999;
+}
+
+/* Display the menu */
+.menu.open {
+  right: 0;
+}
+
+.menu li a,
+.menu li a:active,
+.menu li a:visited {
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.menu-icon {
+  display: inline-block;
+}
+
+.close-menu {
+  display: inline-block;
+  padding: 20px;
+}
+
+.line-menu{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    right: -255px;
+    width: 255px;
+  }
+}
+
+/*
+ * Tablet landscape and desktop
+ */
+@media screen and (min-width: 1024px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .title{
+    padding-left: 20px;
+    display: flex;
+    text-align: left;
+  }
+
+  .line-menu {
+  display: flex;
+  
+  }
+
+  .menu {
+    background: transparent;
+    position: static;
+    transition: none;
+    z-index: auto;
+    width: auto;
+  }
+
+
+  .menu ul {
+    display: flex;
+    background-color: #fff;
+    padding: 10px 0;
+    width: 370px;
+    height: 40px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    top: 500px;
+  }
+
+  .menu ul li {
+    border-left: 1px solid var(--clr-gray-3);
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    text-align: center;
+    top: 500px;
+   
+  }
+
+
+  .menu ul li:nth-child(1) {
+    border-left: 0;
+  }
+
+  .menu li a,
+  .menu li a:active,
+  .menu li a:visited {
+    background-color: transparent;
+    color: var(--clr-gray-5);
+    display: inline;
+    font-weight: 600;
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover,
+  .menu li a:focus {
+    background-color: transparent;
+    color: var(--clr-gray-4);
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  }

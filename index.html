@@ -10,125 +10,68 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/lato/lato-regular-webfont.woff" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     
   </head>
 
-  <body class="body">
-      <!-- Cabeçalho-->
-      <header class="header-wrapper">
-        <div class="container">
-          <img id="logo" src="assets/imagens/logo.svg" alt="logo" />
-          <h1 class="titulo" id="titulo">Controle Financeiro</h1>
-          <!-- menu -->
-          <div  class="menu">
-            <img  class="menu-toggle" src="assets/imagens/menu.svg" alt="">
-            <nav class="links" >
-              <a  class="menu-close" href="">X</a></li>
-           
-            
-              <a  href="javascript:void(0)">Cadastro de transações</a></li>
-           
-              <span> | </span>
-              
-              <a id="clear" href="javascript:void(0)">Limpar dados</a></li>
-            
-            </nav>
+  <body>
+    <header class="header">
+      <section class="container">
+        <img src="assets/imagens/logo.svg" alt="" class="logo">
+        <h1 class="title">Controle Financeiro</h1>
+        <a class="menu-icon" href="#">
+          <img src="assets/imagens/menu.svg" alt="">
+        </a>
+        <nav class="menu"> 
+          <a class="close-menu" href="#"> 
+            <img  src="assets/imagens/fechar.svg" alt="">
+          </a>
+          <ul>
+            <li><a href="#" id="clear">Limpar dados</a></li>
+            <img class="line-menu" src="assets/imagens/linha.svg" alt="">
+            <li><a href="#">Cadastro de Transações</a></li>
+          </ul>
+        </nav>
+        
+      </section>
+    </header>
+    <main>
+      <section class="transaction">
+        <h2>Nova Transação</h2>
+        <div class="inputs_transaction">
+          <div>
+            <label for="operation">Tipo de Transação</label>
+            <select name="operation" id="operation" class="input-data">
+              <option value="-">Compra</option>
+              <option value="+">Venda</option>
+            </select>
+          </div>
+          <div>
+            <label for="product">Nome da Mercadoria</label>
+            <input type="text" id="product" name="product" maxlength="64" class="input-data">
+          </div>
+          <div>
+            <label for="value">Valor</label>
+            <input type="text" id="value" name="value" style="text-align: left;" maxlength="11" class="input-data">
           </div>
         </div>
-      </header>
 
-      
-    <div class="footer">    
-      <!--Transaction form-->
-      <section class="section">
-        <div class="transaction">
-          <div class="nova-transacao">
-            <h1 id="nova-transacao">Nova Transação</h1>
-          </div>
-          <form action="">
-            <div class="transacao">
-                <div  class="tipo-transacao">
-                  <label class="" id="type_transaction" for="tipo-de-transacao">Tipo de transação</label> 
-                  <span id="operation-error" class="error"></span>
-                  <select class="form-transaction" >
-                    <option value="a">Compra</option>
-                    <option value="b">Venda</option>
-                  </select>
-                </div>
-                <div class="nome-mercadoria">
-                    <label id="" for="nmercadoria">Nome da Mercadoria</label> <br />
-                    <span id="operation-error" class="error"></span>
-                    <input class="form-transaction" placeholder=" Input" id="nmercadoria" type="text" maxlength="64" /> 
-                </div>
-                <div class="valor-mercadoria">
-                    <label  for="valor">Valor</label> <br />
-                    <span id="operation-error" class="error"></span>
-                    <!--Type precisa ser text para as mascara do javascript pegar-->
-                    <input id="value" class="form-transaction" 
-                      placeholder=" R$ 0,00"
-                      id="valor"
-                      type="text"
-                      maxlength="11"
-                      step="0.01"
-                      name="=quantity"
-                      min="0.01"
-                    />  
-                </div>
-            </div>
-            <div class="botao-adicionar-transacao">
-              <label for="botao-transaction"></label>
-              <button  class="form-transaction" type="submit" id="botao-transaction"> Adicionar transação </button>
-            </div>
-          </form>
-          <hr class="linha" id="transaction-linha" />
-        </div>
+
       </section>
 
-      <!--Account statement-->
-      <section class="section-account">
-        <div class="extrato-wrapper">
-          <div class="tituloExtrato">
-            <p>Extrato de transações</p>
-          </div>
-          <table class="extrato" cellspacing="0">
-            <thead>
-              <tr>
-                <th></th>
-                <th class="thMercadoria">Mercadoria</th>
-                <th class="thValor">Valor</th>
-              </tr>
-            </thead> 
-            <tbody></tbody>
-          </table>
-          <table class="extrato-total" cellspacing="0">
-              <tr>
-                <td></td>
-                <td></td>
-                <td class="total">
-                  <span class="value"></span><span class="result"></span>
-                </td>
-              </tr>
-          </table>
-          </div>
-      </section>
-    </div> 
-    <footer class="footer"></footer>
-    <div id="modal" class="modal">
-        <div class="modal__content">
-            <h3 class="content__title">Limpar dados<h3/>
-            <p>Todos os dados registrados serão apagados!</p>
-            <div class="content__buttons">
-                <button class="cancel">Cancelar</button>
-                <button class="confirm">Apagar</button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Scripts-->
+    </main>
+
+
+
+
+
+
+
+
     <script src="assets/js/scripts.js"></script> 
+    
   </body>
-  
+
 </html>
