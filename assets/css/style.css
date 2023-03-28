@@ -1,7 +1,8 @@
-
+@import url(modal.css);
 @import url(menu.css);
 @import url(header.css);
 @import url(main.css);
+@import url(fontes.css);
 
 
 * {
@@ -35,14 +36,5 @@ body {
 }
 
 
-.title {
-  width: 100%;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #333;
-}
+
 

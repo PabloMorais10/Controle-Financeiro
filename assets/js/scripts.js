@@ -1,27 +1,21 @@
 
-/**
- *
- * Menu animation.
- *
- */
+
 
 /**
- * Menu related elements
+ * Menu
  */
-const menuButton = document.querySelector(".menu-icon"); // Menu button.
-const menuDiv = document.querySelector(".menu"); // Menu nav tag.
-const closeButton = document.querySelector(".close-menu"); // Close button.
+const menuButton = document.querySelector(".menu-icon"); 
+const menuDiv = document.querySelector(".menu"); 
+const closeButton = document.querySelector(".close-menu"); 
 
-/**
- * Menu related events listeners
- */
 
-/** Displays menu when clicking the hamburger button by adding the 'open' class. */
+
+/** Abrir o menu ao clickar no hamburguer */
 menuButton.addEventListener("click", function () {
   menuDiv.classList.add("open");
 });
 
-/** Hides menu when clicking the close button by removing the 'open' class. */
+/** Fechar o meno ao apertar no X */
 closeButton.addEventListener("click", function () {
   menuDiv.classList.remove("open");
 });
@@ -37,7 +31,7 @@ const confirmClearButton = document.querySelector("button.confirm");
 let transactionsStorage = JSON.parse(localStorage.getItem("transactions"));
 
 /**
- * Convert a Number value in BRL formatted number as string.
+ * Converte um valor numerico para BRL.
  * @param {*} num
  * @returns {string}
  */
@@ -49,44 +43,40 @@ const formatValue = function (num) {
     num = String(num);
   }
 
-  // Check if value is a negative representation
+  // Verifica se o valor é uma representação negativa
   let isNegative = false;
   if (num.startsWith("-")) {
     isNegative = true;
-    num = num.substring(1);  // Discard negative symbol
+    num = num.substring(1); 
   }
 
-   // Change Number presentation from 9999.99 to 9.999,00
+   // alteração de apresentação  9999.99 para 9.999,00
    let formatedValue = num.replace(/\D/g, "");
    formatedValue = (formatedValue / 100).toFixed(2).replace(".", ",");
    formatedValue = formatedValue.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
  
-   // Add negative symbol back if necessary
-   if (isNegative) {
-     formatedValue = "-" + formatedValue;
-   }
- 
-   // Return formatted value
+   
+   // Retornar o valor formatado
    return formatedValue;
  };
 
  /**
- * Normalize a string (with two decimal precision representation) to a float number
+ * Normaliza uma string para um numero float
  * @param {string} str
  * @returns {number}
  */
 
  const stringToNumber = function (str) {
-  // Numbers only (Integer representation)
+  // Apenas numeros
   const value = str.replace(/\D/g, "");
 
-   // Convert to number with two decimal precision
+  
    const number = parseInt(value) / 100;
    return number;
  };
  
  /**
- * Receive an input type text and apply formatValue() on it own value
+ * receber um texto tipo input e aplicar o formatValue
  * @param {object} inputObject
  */
   const valueMask = function (inputObject) {
@@ -109,8 +99,9 @@ const clearErrors = function () {
   });
 };
 
+
 /**
- * Remove input values
+ * remove valores de entrada
  */
 const clearInputs = function () {
   let inputs = document.querySelectorAll(".input-data");
@@ -120,7 +111,7 @@ const clearInputs = function () {
 };
 
 /**
- * Run all clear functions defined above and clear localStorage content.
+ * Executa todas as funções claras definidas acima e limpe o conteúdo localStorage.
  */
 const clearAll = function () {
   clearErrors();
@@ -129,15 +120,15 @@ const clearAll = function () {
 };
 
 /**
- * Check if values on inputs are OK.
+ * Verifique se os valores nas entradas estão OK.
  * @returns {object}
  */
 const validateForm = function () {
 
-  let inputs = document.querySelectorAll(".input-data");  // Get all inputs
-  let ok = true;  // Switch to false if any error exists 
-  let data = {}  // Valid values
-  let errorMsg = {  // Error message by input field
+  let inputs = document.querySelectorAll(".input-data"); 
+  let ok = true; 
+  let data = {}  
+  let errorMsg = {  
     "operation": "Escolha uma operação válida",
     "product": "Preencha o nome da mercadoria",
     "value": "Informe o valor da operação",
@@ -166,18 +157,18 @@ const validateForm = function () {
 };
 
 const populateTable = function () {
-  let table = document.querySelector("tbody"); // Table
-  let totalSpan = document.querySelector(".value"); // Total
-  let resultSpan = document.querySelector(".result"); // Result
+  let table = document.querySelector("tbody"); 
+  let totalSpan = document.querySelector(".value"); 
+  let resultSpan = document.querySelector(".result"); 
 
   let sum = Number();
   let result = null;
 
   transactionsStorage = JSON.parse(localStorage.getItem("transactions"));
 
-   // If has data in localStorage
+   // Se tiver dados em localStorage
    if (transactionsStorage) {
-    // Clear all old exposed data
+    //  Limpar todos os dados antigos expostos
     table.innerHTML = null;
     totalSpan.innerHTML = null;
     resultSpan.innerHTML = null;
@@ -200,7 +191,7 @@ const populateTable = function () {
         </td></tr>`;
     });
 
-     // Check total to make final result
+     // Resultado final
      sum = Number(sum.toFixed(2)); 
 
      if (sum < 0) {
@@ -211,13 +202,13 @@ const populateTable = function () {
        result = "";
      }
 
-        // Apply total and final result in HTML
+        // Aplica o resultado final
     totalSpan.innerHTML = `R$ ${formatValue(sum)}`;
     resultSpan.innerHTML = result;
   }
-  // Else, without data in localStorage
+  // Caso contrário, sem dados no localStorage
   else {
-    // Clear table and inform: No transaction data
+    // Limpar tabela e informar mensagem
     table.innerHTML =
       "<tr><td></td><td>Nenhuma transação cadastrada</td><td></td></tr>";
     totalSpan.innerHTML = null;
@@ -226,59 +217,56 @@ const populateTable = function () {
 };
 
 const registerOperation = function () {
-  // If form has valid data
+  // Se tiver dados validos
 
   let form = validateForm();
 
   if (form.isValid) {
 
-    // If exists transaction entry in localStorage, add this one
+    // Se existir entrada de transação no localStorage, adicione esta
     if (transactionsStorage) {
       transactionsStorage.push(form.data);
       localStorage.setItem("transactions", JSON.stringify(transactionsStorage));
     } else {
-      // Else, initialize transaction entry in localStorage
+      
       localStorage.setItem("transactions", JSON.stringify([form.data]));
     }
-    // Clear errors and input data to receive a new one.
+    // Limpe erros e insira dados para receber um novo.
     clearErrors();
     clearInputs();
   }
 
-  // Reconstruct the table
+  // Reconstruir tabela 
   populateTable();
 };
 
 /**
- * Remove one item from transaction array, by position,
- * update localStorage and table on HTML
+ * 
+ * atualizar localStorage
  * @param {number, string} index
  */
 const removeItem = function (index) {
-  // If transactionsStorage is not empty or null, remove item
-  // and update localStorage
+
+ 
   if (transactionsStorage) {
     transactionsStorage.splice(index, 1);
     localStorage.setItem("transactions", JSON.stringify(transactionsStorage));
   }
 
-  // If length of transactionsStorage is 0, clear it and update local variable.
-  // This is necessary to keep data synced and for an adequate
-  // presentation of HTML table.
+ 
   if (transactionsStorage.length === 0) {
     localStorage.clear();
   }
 
-  // Reconstruct the table
+  // Reconstruir tabela
   populateTable();
 };
 
 
-/**
- * Transaction related events listeners
- */
 
-/** Mask and text cursor in inputValue always in the end */
+
+
+/** Máscara e cursor de texto em inputValue sempre no final */
 inputValue.addEventListener("input", function () {
   valueMask(this);
 });
@@ -286,26 +274,26 @@ inputValue.addEventListener("click", function () {
   this.selectionStart = this.selectionEnd = this.value.length;
 });
 
-/** Add new transaction */
+/** Add nova transacao */
 addButton.addEventListener("click", registerOperation);
 
-/** Cancel clear all data operation and close modal doing nothing */
+/** Cancele a operação de limpeza de todos os dados e feche o modal sem fazer nada*/
 clearButton.addEventListener("click", function () {
   menuDiv.classList.remove("open");
   modalDiv.classList.add("active");
 });
 
-/** Cancel clear all data and close modal */
+/** Cancelar limpar todos os dados e fechar moda */
 cancelClearButton.addEventListener("click", function () {
   modalDiv.classList.remove("active");
 });
 
-/** Confirm all data will be cleaned */
+/** Confirme se todos os dados serão limpos */
 confirmClearButton.addEventListener("click", function () {
   modalDiv.classList.remove("active");
   clearAll();
   populateTable();
 });
 
-/** Draw HTML table on load  */
+
 populateTable();
