@@ -43,6 +43,7 @@
         <div class="inputs_transaction">
           <div>
             <label for="operation">Tipo de Transação</label>
+            <span id="operation-error" class="error"></span>
             <select name="operation" id="operation" class="input-data">
               <option value="-">Compra</option>
               <option value="+">Venda</option>
@@ -50,26 +51,44 @@
           </div>
           <div>
             <label for="product">Nome da Mercadoria</label>
+            <span id="product-error" class="error"></span>
             <input placeholder="Informe a Mercadoria" type="text" id="product" name="product" maxlength="64" class="input-data">
           </div>
           <div>
             <label for="value">Valor</label>
+            <span id="value-error" class="error"></span>
             <input placeholder="R$ 0,00" type="text" id="value" name="value" style="text-align: left;" maxlength="11" class="input-data">
           </div>
         </div>
         <button id="add">Adicionar Transação</button> 
-
+        
+      </section>
+      
+      <section class="extract">
+        <h2 class="title-extract" >Extrato de Transações</h2>
+        <table class="extract-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Mercadoria</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="total">
+                <span class="value"></span><span class="result"></span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
 
       </section>
 
     </main>
-
-
-
-
-
-
-
 
     <script src="assets/js/scripts.js"></script> 
     

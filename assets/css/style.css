@@ -1,5 +1,4 @@
 
-@import url(modal.css);
 @import url(menu.css);
 @import url(header.css);
 @import url(main.css);
@@ -35,6 +34,7 @@ body {
 
 }
 
+
 .title {
   width: 100%;
   text-align: center;
@@ -45,5 +45,4 @@ body {
   line-height: 24px;
   color: #333;
 }
-
 
