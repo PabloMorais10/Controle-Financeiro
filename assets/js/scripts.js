@@ -82,20 +82,18 @@ const formatValue = function (num) {
   const valueMask = function (inputObject) {
   inputObject.value = formatValue(inputObject.value);
 };
-/**
- * Remove classes and contents from itens related with error alerts.
- */
+
 const clearErrors = function () {
-  // Get all elements with error class.
+  
   let errors = document.querySelectorAll(".error");
   errors.forEach(function (element) {
-    element.innerHTML = null; // Remove content
+    element.innerHTML = null; 
   });
 
-  // Get all elements with input-error class
+  
   let inputErrors = document.querySelectorAll(".input-error");
   inputErrors.forEach(function (element) {
-    element.classList.remove("input-error"); // Remove classes`
+    element.classList.remove("input-error"); 
   });
 };
 
